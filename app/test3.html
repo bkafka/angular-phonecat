@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src="js/bensfunctions.js"></script>
+    <script src="lib/jquery/jquery-1.10.2.js"> </script>
+
+    <style>
+        #results li.pass {color: green; }
+        #results li.fail {color: red;}
+    </style>
+
+</head>
+<body>
+
+<p>test</p>
+<ul id="results"></ul>
+
+<h1 id="h01"></h1>
+<script>
+ console.log(eval($));
+var obj = {};
+var func = function(){foo: "ace"};
+obj.field="objfield";
+func.field="dynamic funcfield";
+console.log(func.field);
+console.log(typeof obj);
+console.log(eval(obj));
+console.log(eval(func));
+//console.log(eval(func.field));
+assert(typeof obj === "object", "obj=object");
+assert(typeof func === "function", "func=function");
+
+
+// jquery
+ function myFunction()
+ {
+     $("#h01").html("Hello jQuery")
+ }
+ $(document).ready(myFunction);
+</script>
+</body>
+</html>

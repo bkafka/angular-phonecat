@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+    <script src="js/bensfunctions.js"> </script>
+
+    <style>
+        #results li.pass {color: green; }
+        #results li.fail {color: red;}
+    </style>
+
+</head>
+<body>
+
+<p>test</p>
+<ul id="results"></ul>
+<script>
+
+    window.onload = function() {assert(true, "power");}
+    var ninja = {
+        shout: function() {
+            assert(true,"Ninja") ;
+        }
+    };
+
+
+
+    ninja.shout();
+    var foo = ninja.shout;
+
+    setTimeout( function() {assert(true,'Forever'); }, 500);
+//    assert(true,"start js test");
+//    assert(typeof ninja.shout === "function","ninja.shout is a function");
+//    assert(ninja.shout.name === "", "Ninja.shout.name === \"\"");
+//    assert(typeof ninja.name === "undefined", "ninja name is undefined");
+//    assert(typeof foo === "function", "foo is a function");
+//    assert(typeof window.assert === "function", "assert a function");
+//
+//
+//
+//    console.log( typeof assert === "function");
+//    console.log(typeof document);
+
+</script>
+</body>
+</html>
